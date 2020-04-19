@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28e59856-c65a-4e5c-a385-b9d6f525ffe3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/SeleniumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SeleniumConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToDoAppSeleniumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToDoAppSeleniumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SeleniumConfig.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,14 +26,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ToDoAppSeleniumTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="261">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3188#3196#0" expanded="true" />
+                <element signature="e#3455#3463#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -66,6 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SeleniumConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ToDoAppSelenium.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ToDoAppSeleniumTest.java" />
       </list>
     </option>
   </component>
@@ -138,7 +151,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587280283638" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1587281662484" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -156,8 +169,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="SeleniumConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SeleniumConfig" />
+    <configuration name="ToDoAppSeleniumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ToDoAppSeleniumTest" />
       <module name="Selenium" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,7 +178,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SeleniumConfig" />
+        <item itemvalue="Application.ToDoAppSeleniumTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,12 +192,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587263188542</updated>
-      <workItem from="1587263194721" duration="12032000" />
+      <workItem from="1587263194721" duration="13408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12032000" />
+    <option name="totallyTimeSpent" value="13408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-53" width="1920" height="1080" extended-state="0" />
@@ -243,13 +256,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SeleniumConfig.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        <state relative-caret-position="331">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ToDoAppSeleniumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3188#3196#0" expanded="true" />
+            <element signature="e#3455#3463#0" expanded="true" />
           </folding>
         </state>
       </provider>

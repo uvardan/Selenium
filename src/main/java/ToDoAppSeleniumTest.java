@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class SeleniumConfig {
+public class ToDoAppSeleniumTest {
 
     public static void main(String[] args) throws InterruptedException {
 

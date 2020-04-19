@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -11,7 +12,9 @@ public class SeleniumConfig {
     public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver", "/Users/utkarsh/driver/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors");
+        WebDriver driver = new ChromeDriver(options);
         driver.get("http://localhost:4200/");
 
         System.out.println("Welcome to Todo App");
@@ -29,20 +32,7 @@ public class SeleniumConfig {
         Thread.sleep(1000);
 
         System.out.println("Adding Todo Items");
-        Queue<String> queue = addList();
-        int i = 0;
-
-        while (!queue.isEmpty()) {
-
-            i++;
-            driver.findElement(By.id("add")).click();
-            driver.findElement(By.id("updateDesc")).sendKeys(queue.poll());
-            WebElement date = driver.findElement(By.id("updateTarget"));
-            date.sendKeys(queue.poll());
-            driver.findElement(By.id("save")).click();
-            System.out.println("Item " +i+ " added. " );
-
-        }
+        addItems(driver);
 
         System.out.println("Deleting item");
         Thread.sleep(3000);
@@ -76,7 +66,29 @@ public class SeleniumConfig {
 
     }
 
-    private static Queue<String> addList() {
+    private static void addItems(WebDriver driver) {
+        Queue<String> queue = itemList();
+        int i = 0;
+
+        while (!queue.isEmpty()) {
+
+            i++;
+            driver.findElement(By.id("add")).click();
+            driver.findElement(By.id("updateDesc")).sendKeys(queue.poll());
+            WebElement date = driver.findElement(By.id("updateTarget"));
+            date.sendKeys(queue.poll());
+            driver.findElement(By.id("save")).click();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Item " + i + " added. ");
+
+        }
+    }
+
+    private static Queue<String> itemList() {
 
         Queue<String> queue = new LinkedList<String>();
         queue.add("File Tax");
@@ -87,6 +99,7 @@ public class SeleniumConfig {
 
         queue.add("Pay Rent");
         queue.add("09092020");
+
         return queue;
 
     }

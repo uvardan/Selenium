@@ -30,15 +30,18 @@ public class SeleniumConfig {
 
         System.out.println("Adding Todo Items");
         Queue<String> queue = addList();
-        int i = 1;
+        int i = 0;
+
         while (!queue.isEmpty()) {
+
+            i++;
             driver.findElement(By.id("add")).click();
-            driver.findElement(By.name("description")).sendKeys(queue.poll());
-            WebElement date = driver.findElement(By.name("targetDate"));
+            driver.findElement(By.id("updateDesc")).sendKeys(queue.poll());
+            WebElement date = driver.findElement(By.id("updateTarget"));
             date.sendKeys(queue.poll());
             driver.findElement(By.id("save")).click();
-            System.out.println("Items added: " + i);
-            i++;
+            System.out.println("Item " +i+ " added. " );
+
         }
 
         System.out.println("Deleting item");
@@ -74,14 +77,18 @@ public class SeleniumConfig {
     }
 
     private static Queue<String> addList() {
+
         Queue<String> queue = new LinkedList<String>();
         queue.add("File Tax");
         queue.add("07072020");
+
         queue.add("Pay Bill");
         queue.add("08082020");
+
         queue.add("Pay Rent");
         queue.add("09092020");
         return queue;
+
     }
 
 }

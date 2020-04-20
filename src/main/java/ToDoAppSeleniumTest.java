@@ -14,7 +14,8 @@ public class ToDoAppSeleniumTest {
     }
 
     public static void run() {
-        WebDriver driver = getHeadLessWebDriver();
+
+        WebDriver driver = getHeadlessWebDriver();  //getWebDriver();
         login(driver);
         todoListPage(driver);
         addItems(driver);
@@ -23,12 +24,15 @@ public class ToDoAppSeleniumTest {
         navigateToHome(driver);
         getWelcomeMessage(driver);
         logout(driver);
+
     }
 
     private static void logout(WebDriver driver) {
+
         System.out.println("Logging out .....");
         driver.findElement(By.linkText("Logout")).click();
         System.out.println("Logged out!");
+
     }
 
     private static void getWelcomeMessage(WebDriver driver) {
@@ -117,7 +121,7 @@ public class ToDoAppSeleniumTest {
         return driver;
     }
 
-    private static WebDriver getHeadLessWebDriver() {
+    private static WebDriver getHeadlessWebDriver() {
         System.setProperty("webdriver.chrome.driver", "/Users/utkarsh/driver/chromedriver");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200", "--ignore-certificate-errors");
